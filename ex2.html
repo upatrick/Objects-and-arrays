@@ -147,13 +147,17 @@
             </head>
             <body>
                 <div class="inputBox" id="inner" style="color: azure;"></div>
-                <button onclick="percorrer()" style="--clr: #1e9bff">
-                    <span>Go through</span><i></i>
-                </button>
                 <script>
-                    function percorrer() {
+                    let notebook = {
+                        Processador: "i7",
+                        Memória: "16GB",
+                        Preço: 5000,
+                        HD: "1TB",
+                        SSD: "256GB"
+                    };
 
-                    }
+                    inner.innerHTML = `<h3>${notebook.Processador}<br>${notebook.Memória}<br>
+                    ${notebook.Preço}<br>${notebook.HD}<br>${notebook.SSD}`
                 </script>
                 <!-- 2. Crie um objeto em JavaScript para colocar 5 atributos de um
                 notebook. Atribua os seguintes atributos:
