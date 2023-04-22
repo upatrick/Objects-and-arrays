@@ -147,13 +147,26 @@
             </head>
             <body>
                 <div class="inputBox" id="inner" style="color: azure;"></div>
-                <button onclick="percorrer()" style="--clr: #1e9bff">
-                    <span>Go through</span><i></i>
-                </button>
                 <script>
-                    function percorrer() {
+                    const aluno1 = {
+                    nome: 'João',
+                    nota1: 7,
+                    nota2: 8
+                    };
 
-                    }
+                    const aluno2 = {
+                    nome: 'Maria',
+                    nota1: 9,
+                    nota2: 10
+                    };
+
+                    const mediaAluno1 = (aluno1.nota1 + aluno1.nota2) / 2;
+                    const mediaAluno2 = (aluno2.nota1 + aluno2.nota2) / 2;
+                    const mediaTurma = (mediaAluno1 + mediaAluno2) / 2;
+
+                    inner.innerHTML = `<h3>Aluno 1: ${aluno1.nome}, Notas: ${aluno1.nota1} e ${aluno1.nota2} média de ${mediaAluno1}<br>`
+                    inner.innerHTML += `<h3>Aluno 2: ${aluno2.nome}, Notas: ${aluno2.nota1} e ${aluno2.nota2} média de ${mediaAluno2}<br>`
+                    inner.innerHTML += `<h3>Média da turma: ${mediaTurma}`
                 </script>
                 <!-- 3. Crie um objeto para colocar nome e duas notas. Atribua nome e
                 duas notas para o primeiro objeto, que será nosso primeiro aluno.
